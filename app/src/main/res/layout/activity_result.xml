@@ -12,21 +12,26 @@
         android:id="@+id/resultClassificacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="195dp"
         android:text="xxxxxxxx"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textClassificação"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintTop_toBottomOf="@+id/textClassificação" />
 
     <TextView
         android:id="@+id/textIMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="16dp"
         android:text="IMC:"
         android:textColor="#FFFFFF"
         android:textSize="60sp"
@@ -34,15 +39,16 @@
         app:layout_constraintBottom_toTopOf="@+id/textClassificação"
         app:layout_constraintEnd_toStartOf="@+id/resultIMC"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/resultIMC"
-        android:layout_width="85dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="115dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="30dp"
         android:text="xxxx"
         android:textColor="#FFFFFF"
         android:textSize="42sp"
@@ -50,20 +56,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textIMC"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintVertical_bias="0.703" />
 
     <TextView
         android:id="@+id/textClassificação"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="296dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="40dp"
         android:text="Classificação:"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resultClassificacao"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textIMC" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

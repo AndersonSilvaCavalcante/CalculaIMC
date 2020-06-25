@@ -7,30 +7,120 @@
     android:background="#2196f3"
     tools:context=".MainActivity" >
 
+    <SeekBar
+        android:id="@+id/alturaValue"
+        android:layout_width="315dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="132dp"
+        android:max="200"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressBackgroundTintMode="add"
+        android:progressTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaResult"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textPeso"
-        android:layout_width="46dp"
-        android:layout_height="19dp"
+        android:layout_width="93dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginBottom="26dp"
         android:text="Peso:"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="185dp" />
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pesoValue"
+        app:layout_constraintEnd_toStartOf="@+id/pesoResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/alturaResult"
+        android:layout_width="143dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="63dp"
+        android:text="0.0m"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/alturaValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textAltura"
+        app:layout_constraintTop_toBottomOf="@+id/pesoValue" />
+
+    <SeekBar
+        android:id="@+id/pesoValue"
+        android:layout_width="315dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="28dp"
+        android:max="3000"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressBackgroundTintMode="add"
+        android:progressTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/alturaResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoResult" />
+
+    <TextView
+        android:id="@+id/pesoResult"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="61dp"
+        android:text="0.0Kg"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/pesoValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textPeso"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textAltura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="114dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="26dp"
         android:text="Altura:"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="267dp" />
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/alturaValue"
+        app:layout_constraintEnd_toStartOf="@+id/alturaResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoValue" />
 
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="250dp"
         android:layout_height="65dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="37dp"
+        android:background="#1976D2"
         android:text="Calcular"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#03A9F4"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="533dp" />
+        app:layout_constraintTop_toBottomOf="@+id/alturaValue" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
