@@ -15,7 +15,7 @@ class ResultActivity : AppCompatActivity() {
         val altura = intent.getStringExtra("KEY_ALTURA").toDouble()
 
         val result_imc = peso / (altura * altura)
-        resultIMC.text = result_imc.toString()
+        textIMC.text = "IMC: %.1f".format(result_imc)
 
         if (result_imc < 18.5){
             resultClassificacao.text = "Abaixo do Peso"

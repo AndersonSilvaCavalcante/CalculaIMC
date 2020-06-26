@@ -7,24 +7,6 @@
     android:background="#2196f3"
     tools:context=".MainActivity" >
 
-    <SeekBar
-        android:id="@+id/alturaValue"
-        android:layout_width="315dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="132dp"
-        android:max="200"
-        android:progressBackgroundTint="#FFFFFF"
-        android:progressBackgroundTintMode="add"
-        android:progressTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alturaResult"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/textPeso"
         android:layout_width="93dp"
@@ -40,38 +22,7 @@
         app:layout_constraintEnd_toStartOf="@+id/pesoResult"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/alturaResult"
-        android:layout_width="143dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="63dp"
-        android:text="0.0m"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/alturaValue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textAltura"
-        app:layout_constraintTop_toBottomOf="@+id/pesoValue" />
-
-    <SeekBar
-        android:id="@+id/pesoValue"
-        android:layout_width="315dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="28dp"
-        android:max="3000"
-        android:progressBackgroundTint="#FFFFFF"
-        android:progressBackgroundTintMode="add"
-        android:progressTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/alturaResult"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pesoResult" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/pesoResult"
@@ -80,6 +31,7 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="61dp"
+        android:layout_marginBottom="8dp"
         android:text="0.0Kg"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
@@ -102,6 +54,75 @@
         app:layout_constraintBottom_toTopOf="@+id/alturaValue"
         app:layout_constraintEnd_toStartOf="@+id/alturaResult"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="245dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo_imc" />
+
+    <SeekBar
+        android:id="@+id/alturaValue"
+        android:layout_width="315dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="132dp"
+        android:max="200"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressBackgroundTintMode="add"
+        android:progressTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaResult"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/pesoValue"
+        android:layout_width="315dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="28dp"
+        android:max="3000"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressBackgroundTintMode="add"
+        android:progressTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/alturaResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoResult" />
+
+    <TextView
+        android:id="@+id/alturaResult"
+        android:layout_width="143dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:text="0.0m"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/alturaValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textAltura"
         app:layout_constraintTop_toBottomOf="@+id/pesoValue" />
 
     <Button
